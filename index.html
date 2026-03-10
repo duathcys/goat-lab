@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
 
@@ -16,19 +16,20 @@
   <header class="header">
     <div class="logo">Portfolio</div>
     <nav class="nav">
+      <a href="#main">Main</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="about">
+  <!-- Main Section -->
+  <section class="hero" id="main">
     <div class="hero-content">
       <div class="hero-text">
         <p class="hero-label">✦ Hello, I'm</p>
-        <h1 class="hero-name"><br/><em></em></h1>
+        <h1 class="hero-name"><span class="hero-name-ko">조연수</span><br/><em class="hero-name-en">Yeonsu Cho</em></h1>
         <p class="hero-desc">
-          
+          문제를 발견하고, 데이터로 답을 만드는 사람
         </p>
         <a href="#projects" class="btn-main">프로젝트 보기 →</a>
       </div>
@@ -37,10 +38,97 @@
           <img src="profile.jpg" alt="Profile" class="hero-image" />
           <div class="frame-deco"></div>
         </div>
-        <div class="floating-badge">✦ Open to Work</div>
       </div>
     </div>
     <div class="hero-scroll-hint">scroll ↓</div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-detail" id="about">
+    <div class="about-inner">
+
+      <!-- Education -->
+      <div class="about-block reveal">
+        <div class="about-block-label">
+          <span class="about-icon">🎓</span>
+          <span class="section-label">학력</span>
+        </div>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-top">
+              <div>
+                <div class="about-card-title">숭실대학교</div>
+                <div class="about-card-sub">전자정보공학부 IT융합학과 · 졸업</div>
+              </div>
+              <div class="about-card-period">2021.03 — 2026.02</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Certificates -->
+      <div class="about-block reveal">
+        <div class="about-block-label">
+          <span class="about-icon">📜</span>
+          <span class="section-label">자격증</span>
+        </div>
+        <div class="cert-list">
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <div>
+              <div class="cert-name">SQLD</div>
+              <div class="cert-org">SQL 개발자</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <div>
+              <div class="cert-name">ADsP</div>
+              <div class="cert-org">데이터 분석 준전문가</div>
+            </div>
+          </div>
+          <div class="cert-item">
+            <span class="cert-dot"></span>
+            <div>
+              <div class="cert-name">OPIc</div>
+              <div class="cert-org">영어 말하기 시험</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Awards -->
+      <div class="about-block reveal">
+        <div class="about-block-label">
+          <span class="about-icon">🏆</span>
+          <span class="section-label">수상 경력</span>
+        </div>
+        <div class="award-timeline">
+          <div class="award-item">
+            <div class="award-badge award-gold">대상</div>
+            <div class="award-content">
+              <div class="award-title">천안시 데이터 분석 아이디어 경진대회</div>
+              <div class="award-desc">고령 운전자 교통 정책 제안 — 데이터 분석 기반 사고 예측 및 정책 도출</div>
+            </div>
+          </div>
+          <div class="award-item">
+            <div class="award-badge award-silver">우수상</div>
+            <div class="award-content">
+              <div class="award-title">SSU 데이터톤 학술 논문 연구 분석</div>
+              <div class="award-desc">사회과학 분야 연구 트렌드 정량 분석 및 인터랙티브 대시보드 구현</div>
+            </div>
+          </div>
+          <div class="award-item">
+            <div class="award-badge award-silver">우수상</div>
+            <div class="award-content">
+              <div class="award-title">데이터 학술 연합동아리 '위아이티' 5기</div>
+              <div class="award-desc">2024.03 — 2024.08 · 활동 및 우수상 수상</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </section>
 
   <!-- Projects Section -->
@@ -59,6 +147,16 @@
     <span></span>
     <span></span>
   </footer>
+
+  <!-- Project Detail Modal -->
+  <div class="project-overlay" id="projectOverlay">
+    <div class="project-detail" id="projectDetail">
+      <button class="detail-close" id="detailClose">✕</button>
+      <div class="detail-inner" id="detailInner">
+        <div class="detail-loading">불러오는 중...</div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
