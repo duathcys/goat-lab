@@ -949,10 +949,11 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background: var(--ink);
+  background: none;
   color: var(--yellow);
   padding: 14px 28px;
-  border-radius: 100px;
+  border-radius: 10px;
+  border: 2px solid var(--yellow);
   text-decoration: none;
   font-size: .88rem;
   font-weight: 500;
