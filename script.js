@@ -2,29 +2,29 @@ const projects = [
   {
     emoji: "🔧",
     title: "락앤락 데이터 파이프라인 구축",
-    desc: "데이터 대시보드 구축을 위해 Raw 데이터부터 데이터 마트까지의 전처리 및 적재 파이프라인을 설계·구축. 자동화를 통해 실시간 대시보드 기반 마련.",
-    tags: ["Python", "SQL", "Pipeline"],
+    desc: "Raw 데이터부터 데이터 마트까지의 전처리 및 적재 파이프라인을 GCP 기반으로 설계·구축하고, 자동화를 통해 실시간 대시보드 기반을 마련.",
+    tags: ["Python", "BigQuery", "GCP", "Data Pipeline"],
     partialUrl: "projects/project-1.html"
   },
   {
     emoji: "🏆",
-    title: "천안시 데이터 경진대회",
-    desc: "고령 운전자 면허 갱신 절차 강화 및 교통 정책 제안을 주제로 데이터 분석 진행. 사고 유형 및 심각도 분석·예측을 통해 구체적인 정책 제안 도출 — 대상 수상.",
-    tags: ["Python", "Data Analysis", "대상"],
+    title: "천안시 데이터 분석 아이디어 경진대회",
+    desc: "다양한 외부 데이터를 자동 수집·전처리 후 공간 정보 기반으로 통합 분석하여 사고 패턴을 도출. 머신러닝 기반 사고 심각도 예측 모델을 구축하고 정책 개선안을 제안해 대상을 수상.",
+    tags: ["대상", "Python", "SQL", "Machine Learning", "Gradient Boosting"],
     partialUrl: "projects/project-2.html"
   },
   {
     emoji: "📚",
     title: "데이터톤 학술 논문 연구 트렌드 분석",
-    desc: "사회과학 분야 학술 논문의 연구 트렌드를 정량 분석하고 키워드 중요도·예측·확산 패턴을 통합한 인터랙티브 대시보드 구현 — 2025 SSU 데이터톤 우수상 수상.",
-    tags: ["Python", "NLP", "Dashboard", "우수상"],
+    desc: "사회과학 논문 메타데이터를 임베딩 기반으로 분석해 키워드 변화, 연구자 네트워크, 토픽 확산 패턴을 도출. 시계열 모델로 키워드 빈도를 예측하고 결과를 대시보드로 시각화.",
+    tags: ["우수상", "Python", "NLP", "SBERT", "Machine Learning"],
     partialUrl: "projects/project-3.html"
   },
   {
     emoji: "🕷️",
     title: "현대 이노션 리치플래너 크롤링",
-    desc: "현대이노션 마케팅 플랫폼 데이터를 자동 수집·저장하는 크롤링 파이프라인 구축. OTP 인증 문제·세션 충돌을 해결하고 병렬 크롤링 및 데이터 저장 자동화 성공.",
-    tags: ["Python", "Java", "SQL", "Crawling"],
+    desc: "현대이노션 마케팅 플랫폼 데이터를 자동 수집·저장하는 크롤링 파이프라인을 구축. OTP 인증 및 세션 충돌 문제를 해결하고, 병렬 크롤링과 GCP 기반 데이터 적재 자동화를 구현.",
+    tags: ["Python", "Java", "SQL", "GCP", "Web Crawling"],
     partialUrl: "projects/project-4.html"
   },
   {
@@ -37,8 +37,8 @@ const projects = [
   {
     emoji: "🖥️",
     title: "현대 이노션 관리 페이지 개발",
-    desc: "사용자·권한·메뉴 관리 기능을 포함한 관리자 페이지 개발. 권한 기반 접근 제어와 계층형 메뉴 관리를 중심으로 설계해 보안성과 UX를 동시에 개선.",
-    tags: ["Java", "JavaScript", "SQL"],
+    desc: "사용자·권한·메뉴 관리 기능을 포함한 관리자 페이지 개발. 권한 기반 접근 제어와 계층형 메뉴 관리를 중심으로 설계해 보안성과 사용성을 동시에 개선.",
+    tags: ["Java", "JavaScript", "SQL", "Backend", "Frontend"],
     partialUrl: "projects/project-6.html"
   }
 ];
