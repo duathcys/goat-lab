@@ -1,37 +1,101 @@
-<div class="detail-section">
-  <h2 class="detail-section-title">프로젝트 개요</h2>
-  <p>자사몰과 네이버 스마트스토어 데이터를 활용해 운영 대시보드에 필요한 지표들을 자동 수집·적재·정제하는 데이터 파이프라인을 구축한 프로젝트입니다. GA4와 스마트스토어 API를 활용해 데이터를 수집하고, GCP 기반의 Cloud Function, BigQuery, Cloud Scheduler를 활용해 DataLake → DataWarehouse → DataMart로 이어지는 구조를 설계하고 자동화했습니다.</p>
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>락앤락 데이터 파이프라인 구축 — Portfolio</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-<div class="detail-section">
-  <h2 class="detail-section-title">주요 작업</h2>
-  <ul class="detail-list">
-    <li>Raw 데이터 → 정제 → 데이터 마트까지 단계별 데이터 파이프라인 설계</li>
-    <li>데이터 정합성 검증 및 오류 발생 시 Slack 알람 전송 로직 구현</li>
-    <li>Google Cloud Scheduler + Cloud Function을 활용한 자동화 스케줄링 구축 (오류 시 재시도 횟수 및 간격 설정으로 안정적 운영 보장)</li>
-    <li>Incremental Load 방식 전환으로 실시간·부분 업데이트 효율화</li>
-    <li>Raw Data 테이블 만료 설정 (2개월 자동 삭제)으로 저장 공간 효율화</li>
-    <li>실시간 대시보드 연동 최적화를 위한 적재 구조 개선</li>
-    <li>일정하지 않은 GA4 Raw Data 적재 시간 대응 및 안정적 파이프라인 운영</li>
-  </ul>
-</div>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
 
-<div class="detail-section">
-  <h2 class="detail-section-title">사용 언어</h2>
-  <div class="detail-tech-grid">
-    <div class="detail-tech-item"><span class="tech-dot"></span>Python</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>SQL(BigQuery)</div>
-  </div>
-  <h2 class="detail-section-title">사용 라이브러리 / 패키지</h2>
-  <div class="detail-tech-grid">
-    <div class="detail-tech-item"><span class="tech-dot"></span>google-cloud</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>google-cloud-bigquery</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>google-auth</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>pandas</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>python-dotenv</div>
-  </div>
-</div>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="logo"><a href="../index.html" style="text-decoration:none;color:inherit;">Portfolio</a></div>
+    <nav class="nav">
+      <a href="../index.html#main">Main</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+    </nav>
+  </header>
 
-<a class="detail-notion-btn" href="https://dawn-plant-78f.notion.site/1fa0b0e20db7804a8951cd842cce6ebe?pvs=74" target="_blank" rel="noopener noreferrer">
-  노션에서 자세히 보기 →
-</a>
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="project-hero-inner">
+      <a href="../index.html#projects" class="back-btn">← 프로젝트 목록</a>
+      <div class="project-hero-emoji">🔧</div>
+      <h1 class="project-hero-title">락앤락 데이터 파이프라인 구축</h1>
+      <div class="project-hero-tags">
+        <span class="detail-tag">Python</span>
+        <span class="detail-tag">BigQuery</span>
+        <span class="detail-tag">GCP</span>
+        <span class="detail-tag">Data Pipeline</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <main class="project-content">
+    <div class="project-content-inner detail-inner">
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">프로젝트 개요</h2>
+        <p>자사몰과 네이버 스마트스토어 데이터를 활용해 운영 대시보드에 필요한 지표들을 자동 수집·적재·정제하는 데이터 파이프라인을 구축한 프로젝트입니다. GA4와 스마트스토어 API를 활용해 데이터를 수집하고, GCP 기반의 Cloud Function, BigQuery, Cloud Scheduler를 활용해 DataLake → DataWarehouse → DataMart로 이어지는 구조를 설계하고 자동화했습니다.</p>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">주요 작업</h2>
+        <ul class="detail-list">
+          <li>Raw 데이터 → 정제 → 데이터 마트까지 단계별 데이터 파이프라인 설계</li>
+          <li>데이터 정합성 검증 및 오류 발생 시 Slack 알람 전송 로직 구현</li>
+          <li>Google Cloud Scheduler + Cloud Function을 활용한 자동화 스케줄링 구축 (오류 시 재시도 횟수 및 간격 설정으로 안정적 운영 보장)</li>
+          <li>Incremental Load 방식 전환으로 실시간·부분 업데이트 효율화</li>
+          <li>Raw Data 테이블 만료 설정 (2개월 자동 삭제)으로 저장 공간 효율화</li>
+          <li>실시간 대시보드 연동 최적화를 위한 적재 구조 개선</li>
+          <li>일정하지 않은 GA4 Raw Data 적재 시간 대응 및 안정적 파이프라인 운영</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">사용 언어</h2>
+        <div class="detail-tech-grid">
+          <div class="detail-tech-item"><span class="tech-dot"></span>Python</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>SQL(BigQuery)</div>
+        </div>
+        <h2 class="detail-section-title" style="margin-top:20px;">사용 라이브러리 / 패키지</h2>
+        <div class="detail-tech-grid">
+          <div class="detail-tech-item"><span class="tech-dot"></span>google-cloud</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>google-cloud-bigquery</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>google-auth</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>pandas</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>python-dotenv</div>
+        </div>
+      </div>
+
+      <a class="detail-notion-btn" href="https://dawn-plant-78f.notion.site/1fa0b0e20db7804a8951cd842cce6ebe?pvs=74" target="_blank" rel="noopener noreferrer">
+        노션에서 자세히 보기 →
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span></span>
+    <span></span>
+  </footer>
+
+  <script>
+    // Header scroll shadow
+    var header = document.querySelector(".header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    });
+  </script>
+
+</body>
+</html>
