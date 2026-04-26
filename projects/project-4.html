@@ -1,33 +1,97 @@
-<div class="detail-section">
-  <h2 class="detail-section-title">프로젝트 개요</h2>
-  <p>Google Marketing Platform(DV360) 플랫폼 데이터를 자동으로 수집·전처리하고 DB에 적재까지 하는 파이프라인을 구축하였습니다. 사용자의 데이터 요청은 Spring 기반 컨트롤러에서 처리하며, 플랫폼별 Cloud Run Job을 활용하여 크롤링을 병렬로 수행하도록 구현하였습니다. 이를 통해 데이터 정합성을 유지하고 안정적인 자동화 데이터 파이프라인을 마련하였습니다.</p>
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DV360 데이터 파이프라인 구축 — Portfolio</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-<div class="detail-section">
-  <h2 class="detail-section-title">주요 작업</h2>
-  <ul class="detail-list">
-    <li>OTP 인증 자동화 및 세션 토큰 재사용 전략 구현</li>
-    <li>세션 충돌 문제 해결 및 안정적인 크롤링 확보</li>
-    <li>병렬 크롤링 적용으로 수집 속도 향상</li>
-    <li>수집 데이터 DB 자동 적재 파이프라인 구축</li>
-  </ul>
-</div>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
 
-<div class="detail-section">
-  <h2 class="detail-section-title">사용 언어</h2>
-  <div class="detail-tech-grid">
-    <div class="detail-tech-item"><span class="tech-dot"></span>Python</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>Java</div>
-  </div>
-  <h2 class="detail-section-title">사용 라이브러리 / 패키지</h2>
-  <div class="detail-tech-grid">
-    <div class="detail-tech-item"><span class="tech-dot"></span>selenium</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>undected-chromedriver</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>google-auth</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>google-cloud-storage</div>
-  </div>
-</div>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="logo"><a href="../index.html" style="text-decoration:none;color:inherit;">Portfolio</a></div>
+    <nav class="nav">
+      <a href="../index.html#main">Main</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+    </nav>
+  </header>
 
-<a class="detail-notion-btn" href="https://dawn-plant-78f.notion.site/2480b0e20db780d19e89ff7bb41f9952?pvs=74" target="_blank" rel="noopener noreferrer">
-  노션에서 자세히 보기 →
-</a>
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="project-hero-inner">
+      <a href="../index.html#projects" class="back-btn">← 프로젝트 목록</a>
+      <div class="project-hero-emoji">🔄</div>
+      <h1 class="project-hero-title">DV360 데이터 파이프라인 구축</h1>
+      <div class="project-hero-tags">
+        <span class="detail-tag">Python</span>
+        <span class="detail-tag">Java</span>
+        <span class="detail-tag">GCP</span>
+        <span class="detail-tag">Cloud Run</span>
+        <span class="detail-tag">Selenium</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <main class="project-content">
+    <div class="project-content-inner detail-inner">
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">프로젝트 개요</h2>
+        <p>Google Marketing Platform(DV360) 플랫폼 데이터를 자동으로 수집·전처리하고 DB에 적재까지 하는 파이프라인을 구축하였습니다. 사용자의 데이터 요청은 Spring 기반 컨트롤러에서 처리하며, 플랫폼별 Cloud Run Job을 활용하여 크롤링을 병렬로 수행하도록 구현하였습니다. 이를 통해 데이터 정합성을 유지하고 안정적인 자동화 데이터 파이프라인을 마련하였습니다.</p>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">주요 작업</h2>
+        <ul class="detail-list">
+          <li>OTP 인증 자동화 및 세션 토큰 재사용 전략 구현</li>
+          <li>세션 충돌 문제 해결 및 안정적인 크롤링 확보</li>
+          <li>병렬 크롤링 적용으로 수집 속도 향상</li>
+          <li>수집 데이터 DB 자동 적재 파이프라인 구축</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">사용 언어</h2>
+        <div class="detail-tech-grid">
+          <div class="detail-tech-item"><span class="tech-dot"></span>Python</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>Java</div>
+        </div>
+        <h2 class="detail-section-title" style="margin-top:20px;">사용 라이브러리 / 패키지</h2>
+        <div class="detail-tech-grid">
+          <div class="detail-tech-item"><span class="tech-dot"></span>selenium</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>undetected-chromedriver</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>google-auth</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>google-cloud-storage</div>
+        </div>
+      </div>
+
+      <a class="detail-notion-btn" href="https://dawn-plant-78f.notion.site/2480b0e20db780d19e89ff7bb41f9952?pvs=74" target="_blank" rel="noopener noreferrer">
+        노션에서 자세히 보기 →
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span></span>
+    <span></span>
+  </footer>
+
+  <script>
+    var header = document.querySelector(".header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    });
+  </script>
+
+</body>
+</html>

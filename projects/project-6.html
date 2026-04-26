@@ -1,35 +1,98 @@
-<div class="detail-section">
-  <h2 class="detail-section-title">프로젝트 개요</h2>
-  <p>관리자의 효율적인 시스템 운영을 위해 사용자 관리, 권한 관리, 메뉴 관리 기능을 포함한 관리자 페이지를 개발했습니다. 특히 권한 기반 접근 제어와 계층형 메뉴 관리를 중심으로 설계하여, 사용자별 맞춤 기능 제공이 가능하도록 했으며, 실무 환경에서도 활용할 수 있는 안정적이고 확장 가능한 관리 시스템을 구축하는 것을 목표로 했습니다.</p>
-</div>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>관리자 페이지 개발 — Portfolio</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="../project.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Sans:wght@300;400;500&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
 
-<div class="detail-section">
-  <h2 class="detail-section-title">주요 작업</h2>
-  <ul class="detail-list">
-    <li>사용자 관리 로직 구현 (계정 조회, 삭제, 권한 그룹 할당)</li>
-    <li>메뉴 관리 기능 구현 (계층형 메뉴 생성/수정/삭제, 메뉴 순서 관리)</li>
-    <li>권한 관리 기능 구현 (권한 그룹 생성/수정/삭제, 권한 부여, 접근 제어)</li>
-    <li>권한 기반 UI 표시/비표시 및 권한 체크 기능 구현</li>
-  </ul>
-</div>
+  <!-- Noise overlay -->
+  <div class="noise"></div>
 
-<div class="detail-section">
-  <h2 class="detail-section-title">사용 언어</h2>
-  <div class="detail-tech-grid">
-    <div class="detail-tech-item"><span class="tech-dot"></span>Java (Spring)</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>JavaScript</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>HTML</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>CSS</div>
-  </div>
-  <h2 class="detail-section-title">사용 라이브러리 / 패키지</h2>
-  <div class="detail-tech-grid">
-    <div class="detail-tech-item"><span class="tech-dot"></span>Spring Boot</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>Thymeleaf</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>MyBatis</div>
-    <div class="detail-tech-item"><span class="tech-dot"></span>Fetch API / Axios</div>
-  </div>
-</div>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="logo"><a href="../index.html" style="text-decoration:none;color:inherit;">Portfolio</a></div>
+    <nav class="nav">
+      <a href="../index.html#main">Main</a>
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#projects">Projects</a>
+    </nav>
+  </header>
 
-<a class="detail-notion-btn" href="https://dawn-plant-78f.notion.site/2010b0e20db78032a715cf8da113767d?pvs=74" target="_blank" rel="noopener noreferrer">
-  노션에서 자세히 보기 →
-</a>
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="project-hero-inner">
+      <a href="../index.html#projects" class="back-btn">← 프로젝트 목록</a>
+      <div class="project-hero-emoji">🖥️</div>
+      <h1 class="project-hero-title">관리자 페이지 개발</h1>
+      <div class="project-hero-tags">
+        <span class="detail-tag">Java</span>
+        <span class="detail-tag">Spring Boot</span>
+        <span class="detail-tag">JavaScript</span>
+        <span class="detail-tag">MyBatis</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Content -->
+  <main class="project-content">
+    <div class="project-content-inner detail-inner">
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">프로젝트 개요</h2>
+        <p>관리자의 효율적인 시스템 운영을 위해 사용자 관리, 권한 관리, 메뉴 관리 기능을 포함한 관리자 페이지를 개발했습니다. 특히 권한 기반 접근 제어와 계층형 메뉴 관리를 중심으로 설계하여, 사용자별 맞춤 기능 제공이 가능하도록 했으며, 실무 환경에서도 활용할 수 있는 안정적이고 확장 가능한 관리 시스템을 구축하는 것을 목표로 했습니다.</p>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">주요 작업</h2>
+        <ul class="detail-list">
+          <li>사용자 관리 로직 구현 (계정 조회, 삭제, 권한 그룹 할당)</li>
+          <li>메뉴 관리 기능 구현 (계층형 메뉴 생성/수정/삭제, 메뉴 순서 관리)</li>
+          <li>권한 관리 기능 구현 (권한 그룹 생성/수정/삭제, 권한 부여, 접근 제어)</li>
+          <li>권한 기반 UI 표시/비표시 및 권한 체크 기능 구현</li>
+        </ul>
+      </div>
+
+      <div class="detail-section">
+        <h2 class="detail-section-title">사용 언어</h2>
+        <div class="detail-tech-grid">
+          <div class="detail-tech-item"><span class="tech-dot"></span>Java (Spring)</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>JavaScript</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>HTML</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>CSS</div>
+        </div>
+        <h2 class="detail-section-title" style="margin-top:20px;">사용 라이브러리 / 패키지</h2>
+        <div class="detail-tech-grid">
+          <div class="detail-tech-item"><span class="tech-dot"></span>Spring Boot</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>Thymeleaf</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>MyBatis</div>
+          <div class="detail-tech-item"><span class="tech-dot"></span>Fetch API / Axios</div>
+        </div>
+      </div>
+
+      <a class="detail-notion-btn" href="https://dawn-plant-78f.notion.site/2010b0e20db78032a715cf8da113767d?pvs=74" target="_blank" rel="noopener noreferrer">
+        노션에서 자세히 보기 →
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <span></span>
+    <span></span>
+  </footer>
+
+  <script>
+    var header = document.querySelector(".header");
+    window.addEventListener("scroll", function() {
+      header.classList.toggle("scrolled", window.scrollY > 20);
+    });
+  </script>
+
+</body>
+</html>
