@@ -192,6 +192,126 @@
   transform: translateY(-2px);
   box-shadow: 0 8px 28px var(--shadow);
 }
+/* ===== 아래는 기존 project.css 맨 아래에 이어 붙이면 되는 추가 스타일입니다.
+   기존 변수(--yellow, --yellow-pale, --yellow-dark, --ink, --ink-muted, --radius-sm, --transition, --shadow)를
+   그대로 재사용해서 톤을 맞췄습니다. ===== */
+
+/* ===== Architecture Flow ===== */
+.detail-arch-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 8px;
+}
+.detail-arch-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--yellow-pale);
+  border: 1.5px solid rgba(245, 200, 66, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 18px 22px;
+  min-width: 150px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+.detail-arch-step:hover {
+  border-color: var(--yellow);
+  box-shadow: 0 4px 14px var(--shadow);
+}
+.detail-arch-step .arch-icon {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+.detail-arch-step .arch-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: .9rem;
+  color: var(--ink);
+}
+.detail-arch-step .arch-sub {
+  font-size: .78rem;
+  color: var(--ink-muted);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+.detail-arch-arrow {
+  font-size: 20px;
+  color: var(--yellow-dark);
+}
+
+/* ===== Highlight (주요 성과) / Trouble (트러블슈팅) lists ===== */
+.detail-highlight-list,
+.detail-trouble-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.detail-highlight-list li,
+.detail-trouble-list li {
+  font-size: .93rem;
+  color: var(--ink-muted);
+  line-height: 1.75;
+  padding-left: 22px;
+  position: relative;
+}
+.detail-highlight-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--yellow-dark);
+  font-weight: 700;
+}
+.detail-trouble-list li::before {
+  content: '!';
+  position: absolute;
+  left: 3px;
+  top: 0;
+  color: var(--yellow-dark);
+  font-weight: 700;
+}
+
+/* ===== 자료 사진 grid ===== */
+.detail-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+}
+.detail-photo-slot {
+  border: 2px dashed rgba(245, 200, 66, 0.45);
+  border-radius: var(--radius-sm);
+  aspect-ratio: 16 / 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-muted);
+  font-size: .8rem;
+  text-align: center;
+  padding: 12px;
+  background: var(--yellow-pale);
+  overflow: hidden;
+}
+.detail-photo-slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+@media (max-width: 820px) {
+  .detail-arch-flow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .detail-arch-arrow {
+    transform: rotate(90deg);
+    align-self: center;
+  }
+}
 
 /* ===== Responsive ===== */
 @media (max-width: 820px) {
